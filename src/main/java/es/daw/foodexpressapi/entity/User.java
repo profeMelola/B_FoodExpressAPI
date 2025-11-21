@@ -32,7 +32,8 @@ public class User implements UserDetails {
 
     private String email;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    //@ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name="role_id", nullable = false)
     private Role role;
 
